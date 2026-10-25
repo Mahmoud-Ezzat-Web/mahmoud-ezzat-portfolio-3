@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دارك العقارية - ابحث عن منزل أحلامك</title>
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-city"></i> دارك <span>العقارية</span>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="active">الرئيسية</a>
+                <a href="#properties">العقارات</a>
+                <a href="#services">خدماتنا</a>
+                <a href="#about">من نحن</a>
+                <a href="#contact">تواصل معنا</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-phone"></i> اتصل بنا</a>
+                <div class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>اكتشف عقار أحلامك بكل سهولة وراحة</h1>
+            <p>نقدم لك أفضل الفرص العقارية للبيع والاشتراع والإيجار بأفضل الأسعار في أرقى الأماكن.</p>
+
+            <!-- Search Bar Box -->
+            <div class="search-box">
+                <form id="searchForm">
+                    <div class="search-group">
+                        <label><i class="fa-solid fa-location-dot"></i> المدينة أو المنطقة</label>
+                        <input type="text" placeholder="مثال: القاهرة الجديدة، التجمع الخامس" required>
+                    </div>
+                    <div class="search-group">
+                        <label><i class="fa-solid fa-building"></i> نوع العقار</label>
+                        <select>
+                            <option>شقة سكنية</option>
+                            <option>فيلا مستقلة</option>
+                            <option>منزل / توين هاوس</option>
+                            <option>مكتب تجاري</option>
+                        </select>
+                    </div>
+                    <div class="search-group">
+                        <label><i class="fa-solid fa-wallet"></i> الحد الأقصى للسعر</label>
+                        <input type="text" placeholder="مثال: 5,000,000 ج.م">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i> بحث
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section class="properties section-padding" id="properties">
+        <div class="container">
+            <div class="section-title">
+                <h2>أحدث العقارات المتاحة</h2>
+                <p>تصفح مجموعة مختارة من أفضل العقارات والعروض المميزة</p>
+            </div>
+            <div class="grid-cards">
+                <!-- Property Card 1 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="فيلا فاخرة">
+                        <span class="tag-status">للبيع</span>
+                        <span class="price-tag">4,500,000 ج.م</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>فيلا فاخرة بتصميم عصري</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> التجمع الخامس، القاهرة</p>
+                        <div class="card-features">
+                            <span><i class="fa-solid fa-bed"></i> 4 غرف</span>
+                            <span><i class="fa-solid fa-bath"></i> 3 حمامات</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 350 م²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="شقة راقية">
+                        <span class="tag-status rent">للإيجار</span>
+                        <span class="price-tag">15,000 ج.م / شهرياً</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>شقة راقية بإطلالة مميزة</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> مدينة نصر، القاهرة</p>
+                        <div class="card-features">
+                            <span><i class="fa-solid fa-bed"></i> 3 غرف</span>
+                            <span><i class="fa-solid fa-bath"></i> 2 حمام</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 180 م²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="منزل مستقل">
+                        <span class="tag-status">للبيع</span>
+                        <span class="price-tag">3,200,000 ج.م</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>منزل عائلي هادئ وواسع</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> الشيخ زايد، الجيزة</p>
+                        <div class="card-features">
+                            <span><i class="fa-solid fa-bed"></i> 5 غرف</span>
+                            <span><i class="fa-solid fa-bath"></i> 4 حمامات</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 400 م²</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>لماذا تختار دارك العقارية؟</h2>
+                <p>نلبي احتياجاتك العقارية بخبرة واحترافية عالية</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-box">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h3>مصداقية وأمان تام</h3>
+                    <p>عقود قانونية موثقة وضمان كامل لحقوقك المالية والقانونية.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>استشارات استثمارية</h3>
+                    <p>نساعدك في اختيار العقار الأنسب لتحقيق أعلى عائد استثماري مستقبلي.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>دعم وخدمة عملاء</h3>
+                    <p>فريق محترف جاهز للرد على استفساراتك ومرافقتك في معاينة العقارات.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="#" class="logo footer-logo">
+                    <i class="fa-solid fa-city"></i> دارك <span>العقارية</span>
+                </a>
+                <p>شريكك الأمثل للبحث عن العقارات وشراء أو استئجار منزلك القادم بكل سهولة.</p>
+            </div>
+            <div class="footer-links">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#properties">العقارات</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>تواصل معنا</h4>
+                <p><i class="fa-solid fa-phone"></i> 01000000000</p>
+                <p><i class="fa-solid fa-envelope"></i> info@dark-realestate.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة &copy; 2026 دارك العقارية.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
